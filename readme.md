@@ -14,7 +14,7 @@ App.
 - [PHP](https://www.php.net/) (version 8.2 or later)
 - [Composer](https://getcomposer.org/) (latest version)
 - [Laravel CLI](https://laravel.com/docs/)
-- [MySQL](https://www.mysql.com/) or any other compatible database
+- PostgreSQL
 - A modern browser for testing the app
 - A compatible code editor or IDE (e.g., Visual Studio Code, WebStorm, PHPStorm)
 
@@ -60,7 +60,7 @@ App.
 4. Configure database connection settings in the `.env` file (adjust as needed):
 
    ```env
-   DB_CONNECTION=mysql
+   DB_CONNECTION=pgsql
    DB_HOST=127.0.0.1
    DB_PORT=3306
    DB_DATABASE=your_database_name
@@ -216,30 +216,6 @@ The production build will be available in the `dist/` directory of the frontend 
 - `npm run build`: Creates a production-ready build.
 - `npm run preview`: Previews the production build locally.
 
----
-
-## Environment Variables
-
-**Backend:** Configure `travel-app/.env`:
-
-```env
-APP_URL=http://127.0.0.1:8000
-DB_CONNECTION=pgsql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database_name
-DB_USERNAME=your_database_user
-DB_PASSWORD=your_database_password
-```
-
-**Frontend:** Configure `travel-app/frontend/.env`:
-
-```env
-VITE_API_BASE_URL=http://127.0.0.1:8000/api
-```
-
----
-
 ## Contributing
 
 1. Fork the repository.
@@ -249,7 +225,3 @@ VITE_API_BASE_URL=http://127.0.0.1:8000/api
 5. Open a pull request.
 
 ---
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
